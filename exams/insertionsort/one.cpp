@@ -2,8 +2,11 @@
 using namespace std;
 
 void insertionSort(int a[], int length){
+    // Assume first element at index 0 is already sorted. Loop starts at i=1
     for(int i=1; i<length;i++){
+        // stores the current element you want to insert into sorted part of the array
         int key =a[i];
+        
         int j=i-1;
         while(j>=0 && a[j]>key){
           a[j+1]=a[j];
